@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Popular Songs",
+    "imagePath": "../images//Popular Songs.jpg",
+    "songs":[]
+  },
+  {
+    "name": "Punjabi Hits",
+    "imagePath": "../images//Punjabi Hits.jpeg"
+  },
+  {
+    "name": "Romantic Hits",
+    "imagePath": "../images//Romantic Hits.jpeg"
+  },
+  {
+    "name": "Animal",
+    "imagePath": "../images//Animal.jpeg"
+  }
+]

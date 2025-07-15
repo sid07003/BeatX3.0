@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Arijit Singh",
+    "imagePath": "../images/Arijit Singh.jpeg"
+  },
+  {
+    "name": "Shreya Ghoshal",
+    "imagePath": "../images//Shreya Ghoshal.jpeg"
+  },
+  {
+    "name": "Sonu Nigam",
+    "imagePath": "../images//Sonu Nigam.jpeg"
+  },
+  {
+    "name": "Atif Aslam",
+    "imagePath": "../images//Atif Aslam.jpeg"
+  },
+  {
+    "name": "Badshah",
+    "imagePath": "../images//Badshah.jpeg"
+  },
+  {
+    "name": "Jubin Nautiyal",
+    "imagePath": "../images//Jubin Nautiyal.jpeg"
+  },
+  {
+    "name": "Shubh",
+    "imagePath": "../images//Shubh.jpeg"
+  },
+  {
+    "name": "Honey Singh",
+    "imagePath": "../images//Honey Singh.jpeg"
+  },
+  {
+    "name": "Diljit Dosanjh",
+    "imagePath": "../images//Diljit Dosanjh.jpeg"
+  },
+  {
+    "name": "Armaan Malik",
+    "imagePath": "../images//Armaan Malik.jpeg"
+  }
+]

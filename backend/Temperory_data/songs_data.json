@@ -1,0 +1,394 @@
+[
+  {
+    "name": "Aaja Soniye",
+    "duration": "4:55",
+    "imagePath": "../images/Aaja Soniye.jpeg",
+    "audioPath": "../songs/Aaja Soniye.mp3",
+    "artists": ["Sonu Nigam", "Alka Yagnik"]
+  },
+  {
+    "name": "Agar Mein Kahoon",
+    "duration": "5:28",
+    "imagePath": "../images/Agar Mein Kahoon.jpeg",
+    "audioPath": "../songs/Agar Mein Kahoon.mp3",
+    "artists": ["Sonu Nigam", "Shreya Ghoshal"]
+  },
+  {
+    "name": "Arjan Vailly",
+    "duration": "3:00",
+    "imagePath": "../images/Arjan Vailly.jpeg",
+    "audioPath": "../songs/Arjan Vailly.mp3",
+    "artists": ["Manan Bharadwaj"]
+  },
+  {
+    "name": "Apna Bana Le",
+    "duration": "3:24",
+    "imagePath": "../images/Apna Bana Le.jpeg",
+    "audioPath": "../songs/Apna Bana Le.mp3",
+    "artists": ["Arijit Singh", "Sachin-Jigar"]
+  },
+  {
+    "name": "Besabriyaan",
+    "duration": "3:30",
+    "imagePath": "../images/Besabriyaan.jpeg",
+    "audioPath": "../songs/Besabriyaan.mp3",
+    "artists": ["Armaan Malik"]
+  },
+  {
+    "name": "Baawla",
+    "duration": "3:02",
+    "imagePath": "../images/Baawla.jpeg",
+    "audioPath": "../songs/Baawla.mp3",
+    "artists": ["Badshah"]
+  },
+  {
+    "name": "Case",
+    "duration": "2:15",
+    "imagePath": "../images/Case.jpeg",
+    "audioPath": "../songs/Case.mp3",
+    "artists": ["Diljit Dosanjh"]
+  },
+  {
+    "name": "Born To Shine",
+    "duration": "3:37",
+    "imagePath": "../images/Born To Shine.jpeg",
+    "audioPath": "../songs/Born To Shine.mp3",
+    "artists": ["Diljit Dosanjh"]
+  },
+  {
+    "name": "Agar Tum Saath Ho",
+    "duration": "3:11",
+    "imagePath": "../images/Agar Tum Saath Ho.jpeg",
+    "audioPath": "../songs/Agar Tum Saath Ho.mp3",
+    "artists": ["Arijit Singh", "Alka Yagnik"]
+  },
+  {
+    "name": "Aam Jahe Munde",
+    "duration": "4:14",
+    "imagePath": "../images/Aam Jahe Munde.jpeg",
+    "audioPath": "../songs/Aam Jahe Munde.mp3",
+    "artists": ["Parmish Verma", "Pardhaan"]
+  },
+  {
+    "name": "Ghoomar",
+    "duration": "3:19",
+    "imagePath": "../images/Ghoomar.jpeg",
+    "audioPath": "../songs/Ghoomar.mp3",
+    "artists": ["Shreya Ghoshal"]
+  },
+  {
+    "name": "Dil Diyaan Gallan",
+    "duration": "3:04",
+    "imagePath": "../images/Dil Diyaan Gallan.jpeg",
+    "audioPath": "../songs/Dil Diyaan Gallan.mp3",
+    "artists": ["Atif Aslam", "Vishal-Shekhar"]
+  },
+  {
+    "name": "Goat",
+    "duration": "3:43",
+    "imagePath": "../images/Goat.jpeg",
+    "audioPath": "../songs/Goat.mp3",
+    "artists": ["Diljit Dosanjh"]
+  },
+  {
+    "name": "Haiwaan",
+    "duration": "2:41",
+    "imagePath": "../images/Haiwaan.jpeg",
+    "audioPath": "../songs/Haiwaan.mp3",
+    "artists": ["Ashim Kemson"]
+  },
+  {
+    "name": "Dil Dooba",
+    "duration": "3:47",
+    "imagePath": "../images/Dil Dooba.jpeg",
+    "audioPath": "../songs/Dil Dooba.mp3",
+    "artists": ["Sonu Nigam", "Shreya Ghoshal"]
+  },
+  {
+    "name": "Deewani Mastani",
+    "duration": "5:53",
+    "imagePath": "../images/Deewani Mastani.jpeg",
+    "audioPath": "../songs/Deewani Mastani.mp3",
+    "artists": ["Shreya Ghoshal"]
+  },
+  {
+    "name": "Bol Do Na Zara",
+    "duration": "4:53",
+    "imagePath": "../images/Bol Do Na Zara.jpeg",
+    "audioPath": "../songs/Bol Do Na Zara.mp3",
+    "artists": ["Armaan Malik", "Amaal Malik"]
+  },
+  {
+    "name": "Hasi",
+    "duration": "2:36",
+    "imagePath": "../images/Hasi.jpeg",
+    "audioPath": "../songs/Hasi.mp3",
+    "artists": ["Shreya Ghoshal"]
+  },
+  {
+    "name": "Hare Krishna Hare Rama",
+    "duration": "6:59",
+    "imagePath": "../images/Hare Krishna Hare Rama.jpeg",
+    "audioPath": "../songs/Hare Krishna Hare Rama.mp3",
+    "artists": ["Jubin Nautiyal"]
+  },
+  {
+    "name": "Jab Tak",
+    "duration": "3:30",
+    "imagePath": "../images/Jab Tak.jpeg",
+    "audioPath": "../songs/Jab Tak.mp3",
+    "artists": ["Armaan Malik"]
+  },
+  {
+    "name": "Jaadui",
+    "duration": "3:47",
+    "imagePath": "../images/Jaadui.jpeg",
+    "audioPath": "../songs/Jaadui.mp3",
+    "artists": ["Jubin Nautiyal"]
+  },
+  {
+    "name": "Kamaal",
+    "duration": "3:07",
+    "imagePath": "../images/Kamaal.jpeg",
+    "audioPath": "../songs/Kamaal.mp3",
+    "artists": ["Badshah", "Uchana Amit"]
+  },
+  {
+    "name": "King Shit",
+    "duration": "3:47",
+    "imagePath": "../images/King Shit.jpeg",
+    "audioPath": "../songs/King Shit.mp3",
+    "artists": ["Shubh"]
+  },
+  {
+    "name": "Issa Vibe",
+    "duration": "2:28",
+    "imagePath": "../images/Issa Vibe.jpeg",
+    "audioPath": "../songs/Issa Vibe.mp3",
+    "artists": ["Badshah"]
+  },
+  {
+    "name": "Kuley Kuley",
+    "duration": "3:29",
+    "imagePath": "../images/Kuley Kuley.jpeg",
+    "audioPath": "../songs/Kuley Kuley.mp3",
+    "artists": ["Honey Singh"]
+  },
+  {
+    "name": "Main Rang Sharbatoon Ka",
+    "duration": "4:30",
+    "imagePath": "../images/Main Rang Sharbatoon Ka.jpeg",
+    "audioPath": "../songs/Main Rang Sharbatoon Ka.mp3",
+    "artists": ["Atif Aslam", "Chinmayi"]
+  },
+  {
+    "name": "Lemonade",
+    "duration": "2:46",
+    "imagePath": "../images/Lemonade.jpeg",
+    "audioPath": "../songs/Lemonade.mp3",
+    "artists": ["Diljit Dosanjh"]
+  },
+  {
+    "name": "Meri Maa Ke Barabar",
+    "duration": "5:27",
+    "imagePath": "../images/Meri Maa Ke Barabar.jpeg",
+    "audioPath": "../songs/Meri Maa Ke Barabar.mp3",
+    "artists": ["Jubin Nautiyal"]
+  },
+  {
+    "name": "Manike",
+    "duration": "3:58",
+    "imagePath": "../images/Manike.jpeg",
+    "audioPath": "../songs/Manike.mp3",
+    "artists": ["Jubin Nautiyal", "Yohani"]
+  },
+  {
+    "name": "Love Dose",
+    "duration": "4:36",
+    "imagePath": "../images/Love Dose.jpeg",
+    "audioPath": "../songs/Love Dose.mp3",
+    "artists": ["Honey Singh"]
+  },
+  {
+    "name": "Mere Dholna",
+    "duration": "7:02",
+    "imagePath": "../images/Mere Dholna.jpeg",
+    "audioPath": "../songs/Mere Dholna.mp3",
+    "artists": ["Shreya Ghoshal", "M.G.Sreekumar"]
+  },
+  {
+    "name": "Nagada Sang Dhol",
+    "duration": "4:55",
+    "imagePath": "../images/Nagada Sang Dhol.jpeg",
+    "audioPath": "../songs/Nagada Sang Dhol.mp3",
+    "artists": ["Shreya Ghoshal"]
+  },
+  {
+    "name": "Husn",
+    "duration": "3:59",
+    "imagePath": "../images/Husn.jpeg",
+    "audioPath": "../songs/Husn.mp3",
+    "artists": ["Anuv Jain"]
+  },
+  {
+    "name": "No Love",
+    "duration": "2:50",
+    "imagePath": "../images/No Love.jpeg",
+    "audioPath": "../songs/No Love.mp3",
+    "artists": ["Shubh"]
+  },
+  {
+    "name": "Paniyon Sa",
+    "duration": "3:26",
+    "imagePath": "../images/Paniyon Sa.jpeg",
+    "audioPath": "../songs/Paniyon Sa.mp3",
+    "artists": ["Atif Aslam"]
+  },
+  {
+    "name": "Oonchi Oonchi Deewarein",
+    "duration": "3:15",
+    "imagePath": "../images/Oonchi Oonchi Deewarein.jpeg",
+    "audioPath": "../songs/Oonchi Oonchi Deewarein.mp3",
+    "artists": ["Arijit Singh"]
+  },
+  {
+    "name": "Rait Zara Si",
+    "duration": "5:05",
+    "imagePath": "../images/Rait Zara Si.jpeg",
+    "audioPath": "../songs/Rait Zara Si.mp3",
+    "artists": ["A.R.Rahman", "Arijit Singh"]
+  },
+  {
+    "name": "Hua Mein",
+    "duration": "4:35",
+    "imagePath": "../images/Hua Mein.jpeg",
+    "audioPath": "../songs/Hua Mein.mp3",
+    "artists": ["Raghav Chaitanya"]
+  },
+  {
+    "name": "O Bedardeya",
+    "duration": "5:23",
+    "imagePath": "../images/O Bedardeya.jpeg",
+    "audioPath": "../songs/O Bedardeya.mp3",
+    "artists": ["Arijit Singh"]
+  },
+  {
+    "name": "Phir Aur Kya Chahiye",
+    "duration": "3:35",
+    "imagePath": "../images/Phir Aur Kya Chahiye.jpeg",
+    "audioPath": "../songs/Phir Aur Kya Chahiye.mp3",
+    "artists": ["Arijit Singh"]
+  },
+  {
+    "name": "Pehle Bhi Mein",
+    "duration": "4:08",
+    "imagePath": "../images/Pehle Bhi Mein.jpeg",
+    "audioPath": "../songs/Pehle Bhi Mein.mp3",
+    "artists": ["Vishal Mishra", "Raj Shekhar"]
+  },
+  {
+    "name": "Sab Tera",
+    "duration": "2:25",
+    "imagePath": "../images/Sab Tera.jpeg",
+    "audioPath": "../songs/Sab Tera.mp3",
+    "artists": ["Armaan Malik"]
+  },
+  {
+    "name": "Sajna",
+    "duration": "2:42",
+    "imagePath": "../images/Sajna.jpeg",
+    "audioPath": "../songs/Sajna.mp3",
+    "artists": ["Badshah"]
+  },
+  {
+    "name": "Satranga",
+    "duration": "4:32",
+    "imagePath": "../images/Satranga.jpeg",
+    "audioPath": "../songs/Satranga.mp3",
+    "artists": ["Arijit Singh"]
+  },
+  {
+    "name": "Saware",
+    "duration": "5:21",
+    "imagePath": "../images/Saware.jpeg",
+    "audioPath": "../songs/Saware.mp3",
+    "artists": ["Arijit Singh"]
+  },
+  {
+    "name": "Samjhawan",
+    "duration": "4:25",
+    "imagePath": "../images/Samjhawan.jpeg",
+    "audioPath": "../songs/Samjhawan.mp3",
+    "artists": ["Arijit Singh", "Shreya Ghoshal"]
+  },
+  {
+    "name": "Tere Liye",
+    "duration": "5:01",
+    "imagePath": "../images/Tere Liye.jpeg",
+    "audioPath": "../songs/Tere Liye.mp3",
+    "artists": ["Atif Aslam", "Shreya Ghoshal"]
+  },
+  {
+    "name": "Tera Hua",
+    "duration": "3:51",
+    "imagePath": "../images/Tera Hua.jpeg",
+    "audioPath": "../songs/Tera Hua.mp3",
+    "artists": ["Atif Aslam"]
+  },
+  {
+    "name": "Still Rollin",
+    "duration": "2:51",
+    "imagePath": "../images/Still Rollin.jpeg",
+    "audioPath": "../songs/Still Rollin.mp3",
+    "artists": ["Shubh"]
+  },
+  {
+    "name": "Tere Pyaar Mein",
+    "duration": "4:16",
+    "imagePath": "../images/Tere Pyaar Mein.jpeg",
+    "audioPath": "../songs/Tere Pyaar Mein.mp3",
+    "artists": ["Arijit Singh"]
+  },
+  {
+    "name": "You and Me",
+    "duration": "2:50",
+    "imagePath": "../images/You and Me.jpeg",
+    "audioPath": "../songs/You and Me.mp3",
+    "artists": ["Shubh"]
+  },
+  {
+    "name": "Teri Ore",
+    "duration": "2:31",
+    "imagePath": "../images/Teri Ore.jpeg",
+    "audioPath": "../songs/Teri Ore.mp3",
+    "artists": ["Shreya Ghoshal", "Rahat Fateh Ali Khaan"]
+  },
+  {
+    "name": "Mohe Rang Do Laal",
+    "duration": "3:58",
+    "imagePath": "../images/Mohe Rang Do Laal.jpeg",
+    "audioPath": "../songs/Mohe Rang Do Laal.mp3",
+    "artists": ["Shreya Ghoshal"]
+  },
+  {
+    "name": "Tumse Milke Dil Ka",
+    "duration": "5:40",
+    "imagePath": "../images/Tumse Milke Dil Ka.jpeg",
+    "audioPath": "../songs/Tumse Milke Dil Ka.mp3",
+    "artists": ["Sonu Nigam"]
+  },
+  {
+    "name": "Dope Shope",
+    "duration": "3:31",
+    "imagePath": "../images/Dope Shope.jpeg",
+    "audioPath": "../songs/Dope Shope.mp3",
+    "artists": ["Honey Singh"]
+  },
+  {
+    "name": "Desi Kalakaar",
+    "duration": "4:13",
+    "imagePath": "../images/Desi Kalakaar.jpeg",
+    "audioPath": "../songs/Desi Kalakaar.mp3",
+    "artists": ["Honey Singh"]
+  }
+]
