@@ -14,7 +14,13 @@ const findUserByEmail = async (email) => {
   return await db.collection(COLLECTION_NAME).findOne({ email });
 };
 
+const getUserById = async (id) => {
+  const db = getDB();
+  return await db.collection(COLLECTION_NAME).findOne({ _id: new ObjectId(id) });
+};
+
 module.exports = {
   createUser,
-  findUserByEmail
+  findUserByEmail,
+  getUserById
 };

@@ -1,9 +1,8 @@
 const SystemPlaylistModel = require("../models/SystemPlaylist_model");
 
-exports.getSystemPlaylists = async (req, res) => {
+const getSystemPlaylists = async (req, res) => {
   try {
     const playlists = await SystemPlaylistModel.getAllPlaylists();
-    console.log(playlists);
 
     res.status(200).json({
       success: true,
@@ -17,3 +16,19 @@ exports.getSystemPlaylists = async (req, res) => {
     });
   }
 };
+
+const getSystemPlaylistData = async (req, res) => {
+  try {
+    const artistId = req.params.id;
+    const data = await SystemPlaylistModel.getSystemPlaylistDataById(artistId);
+    res.status(200).json(data);
+  } catch (err) {
+    console.error("Error in getArtistData:", err.message);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+}
+
+module.exports = {
+  getSystemPlaylists,
+  getSystemPlaylistData
+}

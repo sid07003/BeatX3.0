@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../CSS/SignUp.scss';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../CSS/SignUp.scss";
 
 export default function Signup() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const [isNotification, setIsNotification] = useState(false);
-  const [notification, setNotification] = useState('');
+  const [notification, setNotification] = useState("");
   const [isError, setIsError] = useState(false);
   const [showPassword1, setShowPassword1] = useState(false);
   const [showPassword2, setShowPassword2] = useState(false);
 
   const API_BASE_URL = process.env.REACT_APP_API_URL;
+  const navigate = useNavigate();
 
   const showMessage = (msg, isError) => {
     setNotification(msg);
@@ -34,9 +35,10 @@ export default function Signup() {
       const response = await fetch(`${API_BASE_URL}/api/users/signup`, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email, password }) // No need to send confirmPassword
+        body: JSON.stringify({ email, password }),
+        credentials: "include"
       });
 
       const result = await response.json();
@@ -49,6 +51,10 @@ export default function Signup() {
       setEmail("");
       setPassword("");
       setConfirmPassword("");
+
+      setTimeout(() => {
+        navigate("/");
+      }, 1000);
     } catch (error) {
       console.error("Signup error:", error);
       showMessage(error.message, true);
@@ -78,7 +84,9 @@ export default function Signup() {
               required
             />
             <i
-              className={`fa-regular ${showPassword1 ? "fa-eye" : "fa-eye-slash"}`}
+              className={`fa-regular ${
+                showPassword1 ? "fa-eye" : "fa-eye-slash"
+              }`}
               onClick={() => setShowPassword1(!showPassword1)}
               aria-label="Toggle password visibility"
               role="button"
@@ -93,7 +101,9 @@ export default function Signup() {
               required
             />
             <i
-              className={`fa-regular ${showPassword2 ? "fa-eye" : "fa-eye-slash"}`}
+              className={`fa-regular ${
+                showPassword2 ? "fa-eye" : "fa-eye-slash"
+              }`}
               onClick={() => setShowPassword2(!showPassword2)}
               aria-label="Toggle confirm password visibility"
               role="button"
@@ -105,13 +115,7 @@ export default function Signup() {
 
       <div
         id="notification"
-        className={
-          isNotification
-            ? isError
-              ? "error"
-              : "success"
-            : "noError"
-        }
+        className={isNotification ? (isError ? "error" : "success") : "noError"}
       >
         {notification}
       </div>

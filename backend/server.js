@@ -7,8 +7,10 @@ const { connectDB } = require("./config/db");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const userRoutes = require("./routes/user.routes");
-const systemPlaylistRoutes = require("./routes/SystemPlaylist.routes");
+const userRoutes = require("./routes/User.routes");
+const systemPlaylistRoutes = require("./routes/PlaylistWrapper.routes");
+const dataRoutes = require("./routes/BeatxData.routes");
+const searchRoutes = require("./routes/Search.routes");
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -20,7 +22,9 @@ app.use(cors({
   credentials: true,
 }));
 app.use("/api/users", userRoutes);
-app.use("/api/albums", systemPlaylistRoutes);
+app.use("/api", systemPlaylistRoutes);
+app.use("/api", dataRoutes);
+app.use("/", searchRoutes);
 
 // Connect DB & Start server
 connectDB().then(() => {

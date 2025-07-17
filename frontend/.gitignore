@@ -1,23 +1,48 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ----------------------------------------
+# Node modules (both root and subfolders)
+**/node_modules
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# ----------------------------------------
+# Environment variable files (all .env variations in all folders)
+**/.env*
+!**/.env.example
 
-# testing
-/coverage
+# ----------------------------------------
+# Build output
+**/build
+**/dist
 
-# production
-/build
+# ----------------------------------------
+# Testing coverage
+**/coverage
 
-# misc
+# ----------------------------------------
+# OS & Editor system files
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
+# ----------------------------------------
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# ----------------------------------------
+# PnP (Yarn Plug'n'Play)
+.pnp.*
+.pnp
+
+# ----------------------------------------
+# Vite cache
+**/.vite
+
+# ----------------------------------------
+# VSCode settings
+.vscode/
+
+# ----------------------------------------
+# Optional: Ignore lock files (uncomment if needed)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

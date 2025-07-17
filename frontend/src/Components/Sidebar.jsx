@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import "../CSS/Sidebar.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { showLoginPrompt } from '../features/loginPrompt/loginPromptSlice';
+import { showLoginPrompt } from "../features/loginPrompt/loginPromptSlice";
 import { setAlbums } from "../features/albums/albumSlice";
 import { Link } from "react-router-dom";
 
@@ -9,13 +9,19 @@ export default function Sidebar() {
   const dispatch = useDispatch();
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const albums = useSelector((state) => state.albums.albums);
+  const likedSongs = useSelector((state) => state.likedSongs.likedSongs);
+  const likedSongsRef = useRef(likedSongs);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/albums/getAlbumData", {
+    likedSongsRef.current = likedSongs;
+  }, [likedSongs]);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/api/getAlbumData", {
       method: "GET",
       headers: {
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     })
       .then((res) => res.json())
       .then((result) => {
@@ -25,6 +31,23 @@ export default function Sidebar() {
         console.log(err);
       });
   }, [dispatch]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (likedSongsRef.current.length > 0) {
+        console.log("Syncing liked songs:", likedSongsRef.current);
+
+        fetch("http://localhost:3001/api/likedSongs/sync", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({ likedSongs: likedSongsRef.current }),
+        });
+      }
+    }, 5000);
+
+    return () => clearInterval(interval); // clear on unmount
+  }, []);
 
   const handleProtectedClick = (e) => {
     if (!isLoggedIn) {
@@ -37,10 +60,19 @@ export default function Sidebar() {
     <div className="sidebar">
       <div className="logo">
         <div style={{ margin: "5px" }}>
-          <i className="fa-solid fa-music" style={{ color: "#ffffff", fontSize: "35px" }} id="beatxLogo"></i>
+          <i
+            className="fa-solid fa-music"
+            style={{ color: "#ffffff", fontSize: "35px" }}
+            id="beatxLogo"
+          ></i>
         </div>
-        <div className="homeText" style={{ color: "#ffffff", fontSize: "25px" }}>
-          <b><i>BEATX</i></b>
+        <div
+          className="homeText"
+          style={{ color: "#ffffff", fontSize: "25px" }}
+        >
+          <b>
+            <i>BEATX</i>
+          </b>
         </div>
       </div>
 
@@ -57,7 +89,10 @@ export default function Sidebar() {
         onClick={!isLoggedIn ? handleProtectedClick : null}
       >
         <div style={{ margin: "10px" }}>
-          <i className="fa-solid fa-magnifying-glass" style={{ color: "#ffffff" }}></i>
+          <i
+            className="fa-solid fa-magnifying-glass"
+            style={{ color: "#ffffff" }}
+          ></i>
         </div>
         <div style={{ margin: "5px", color: "white" }}>Search</div>
       </Link>
@@ -73,12 +108,20 @@ export default function Sidebar() {
         <ul className="content">
           <li className="liked">
             <Link
-              to={isLoggedIn ? "/likedsongs" : "#"}
+              to={isLoggedIn ? "/likedSongs" : "#"}
               onClick={!isLoggedIn ? handleProtectedClick : null}
-              style={{ display: "flex", alignItems: "center", textDecoration: "none", color: "#fff" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+                color: "#fff",
+              }}
             >
               <div style={{ margin: "5px" }}>
-                <i className="fa-solid fa-heart" style={{ color: "#ffffff" }}></i>
+                <i
+                  className="fa-solid fa-heart"
+                  style={{ color: "#ffffff" }}
+                ></i>
               </div>
               <div style={{ margin: "5px" }}>Liked Songs</div>
             </Link>
@@ -86,14 +129,28 @@ export default function Sidebar() {
 
           <li className="liked">
             <Link
-              to={isLoggedIn ? "/myplaylist" : "#"}
+              to={isLoggedIn ? "/myPlaylists" : "#"}
               onClick={!isLoggedIn ? handleProtectedClick : null}
-              style={{ display: "flex", alignItems: "center", textDecoration: "none", color: "#fff" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                textDecoration: "none",
+                color: "#fff",
+              }}
             >
               <div style={{ margin: "5px" }}>
-                <i className="fa-solid fa-bars" style={{ color: "#ffffff" }}></i>
+                <i
+                  className="fa-solid fa-bars"
+                  style={{ color: "#ffffff" }}
+                ></i>
               </div>
-              <div style={{ margin: "5px", overflow: "hidden", textOverflow: "ellipsis" }}>
+              <div
+                style={{
+                  margin: "5px",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                }}
+              >
                 My Playlists
               </div>
             </Link>
@@ -102,14 +159,14 @@ export default function Sidebar() {
           {albums.map((item, index) => (
             <li className="liked" key={index}>
               <Link
-                to={isLoggedIn ? `/artist/${item.name}` : "#"}
+                to={isLoggedIn ? `/beatx/${item._id}` : "#"}
                 onClick={!isLoggedIn ? handleProtectedClick : null}
                 style={{
                   margin: "5px",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
-                  color: "rgb(255, 255, 255, 0.7)",
-                  textDecoration: "none"
+                  color: "white",
+                  textDecoration: "none",
                 }}
               >
                 {item.name}
