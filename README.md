@@ -1,11 +1,33 @@
-# BeatX3.0
-Media Streaming Platform
+# BeatX 3.0 🎵
+A MERN-based media streaming prototype built to demonstrate clean code practices, modular architecture, and efficient development workflows. Includes JWT authentication, Redux state management, and a normalized MongoDB schema for songs, playlists, likes, and users.
 
--------------------  Users --------------------------------------------------
+---
+
+## 🚀 Tech Stack
+**Frontend:** React, Redux, HTML, CSS  
+**Backend:** Node.js, Express.js  
+**Database:** MongoDB (with join-style collections)  
+**Other Tools:** Python (for dataset generation), JWT, bcrypt
+
+---
+
+## ✨ Features
+- Secure JWT-based authentication
+- Redux for global state management
+- Public and private playlists
+- Liked songs and recently played tracking
+- Seeded database with realistic music data using Python scripts
+
+---
+
+## 🗄️ Database Schema
+
+### **Users**
+```json
 {
   _id: ObjectId,
   email: String,
-  password: String,         // Hashed with bcrypt
+  password: String,         
   lastPlayedSong: {
     songId: ObjectId,
     playedAt: Date
@@ -15,6 +37,7 @@ Media Streaming Platform
 }
 
 -------------------- User Playlist ------------------------------------------
+```json
 {
   _id: ObjectId,
   name: String,                       // e.g., "Gym Bangers"
@@ -28,6 +51,7 @@ Media Streaming Platform
 }
 
 ------------------- Playlist Songs ------------------------------------------
+```json
 {
   _id: ObjectId,
   playlistId: ObjectId("user_playlists"),
@@ -37,6 +61,7 @@ Media Streaming Platform
 }
 
 ------------------ user likes -----------------------------------------------
+```json
 {
   _id: ObjectId,
   userId: ObjectId,
