@@ -2,7 +2,7 @@
 A MERN-based media streaming prototype built to demonstrate clean code practices, modular architecture, and efficient development workflows. Includes JWT authentication, Redux state management, and a normalized MongoDB schema for songs, playlists, likes, and users.
 
 ---
-### ScreenShots
+# ScreenShots
 ## Home Page
 ![Home Page](frontend/public/images/home-page.png)
 
